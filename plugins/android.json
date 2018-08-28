@@ -1,0 +1,80 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-email-composer": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "292526344573042",
+      "APP_NAME": "forsightsociallogin",
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-ionic": {
+      "APP_ID": "c62d0853",
+      "CHANNEL_NAME": "Master",
+      "UPDATE_API": "https://api.ionicjs.com",
+      "UPDATE_METHOD": "background",
+      "MAX_STORE": "2",
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-actionsheet": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.forsight.v1"
+    }
+  }
+}

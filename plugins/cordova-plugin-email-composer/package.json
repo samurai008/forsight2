@@ -1,0 +1,119 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-email-composer@^0.8.7",
+        "scope": null,
+        "escapedName": "cordova-plugin-email-composer",
+        "name": "cordova-plugin-email-composer",
+        "rawSpec": "^0.8.7",
+        "spec": ">=0.8.7 <0.9.0",
+        "type": "range"
+      },
+      "/Users/pranavarora/Files/dotslash/forsight-master"
+    ]
+  ],
+  "_from": "cordova-plugin-email-composer@>=0.8.7 <0.9.0",
+  "_id": "cordova-plugin-email-composer@0.8.14",
+  "_inCache": true,
+  "_location": "/cordova-plugin-email-composer",
+  "_nodeVersion": "7.10.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-email-composer-0.8.14.tgz_1517413473548_0.11950619635172188"
+  },
+  "_npmUser": {
+    "name": "katzer",
+    "email": "katzer@appplant.de"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-email-composer@^0.8.7",
+    "scope": null,
+    "escapedName": "cordova-plugin-email-composer",
+    "name": "cordova-plugin-email-composer",
+    "rawSpec": "^0.8.7",
+    "spec": ">=0.8.7 <0.9.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-email-composer/-/cordova-plugin-email-composer-0.8.14.tgz",
+  "_shasum": "200b2ab932ee9569389a18f5624afa88b41369fe",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-email-composer@^0.8.7",
+  "_where": "/Users/pranavarora/Files/dotslash/forsight-master",
+  "author": {
+    "name": "Sebastián Katzer"
+  },
+  "bugs": {
+    "url": "https://github.com/katzer/cordova-plugin-email-composer/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-email-composer",
+    "platforms": [
+      "ios",
+      "osx",
+      "android",
+      "windows",
+      "browser"
+    ]
+  },
+  "dependencies": {},
+  "description": "Provides access to the standard interface that manages the editing and sending an email message",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-LwkLhXEiky7tlDQPL4w6Q2RJhRfUjoCzr4unzXMUPUTd36F92r7gOeKVKxH22bM7ChPC+bQxmwczPSp7ta1qTQ==",
+    "shasum": "200b2ab932ee9569389a18f5624afa88b41369fe",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-email-composer/-/cordova-plugin-email-composer-0.8.14.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=6.2.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.0.0"
+    },
+    {
+      "name": "cordova-windows",
+      "version": ">=4.3.0"
+    }
+  ],
+  "gitHead": "be6ef9d5d3b90db1fbe481b0eac8737cab7eac64",
+  "homepage": "https://github.com/katzer/cordova-plugin-email-composer#readme",
+  "keywords": [
+    "appplant",
+    "email",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-android",
+    "cordova-windows",
+    "cordova-browser"
+  ],
+  "license": "Apache 2.0",
+  "maintainers": [
+    {
+      "name": "katzer",
+      "email": "katzer@appplant.de"
+    }
+  ],
+  "name": "cordova-plugin-email-composer",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katzer/cordova-plugin-email-composer.git"
+  },
+  "version": "0.8.14"
+}

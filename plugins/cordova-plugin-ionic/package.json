@@ -1,0 +1,122 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-ionic@^1.1.8",
+        "scope": null,
+        "escapedName": "cordova-plugin-ionic",
+        "name": "cordova-plugin-ionic",
+        "rawSpec": "^1.1.8",
+        "spec": ">=1.1.8 <2.0.0",
+        "type": "range"
+      },
+      "/Users/pranavarora/Files/dotslash/forsight-master"
+    ]
+  ],
+  "_from": "cordova-plugin-ionic@>=1.1.8 <2.0.0",
+  "_id": "cordova-plugin-ionic@1.1.9",
+  "_inCache": true,
+  "_location": "/cordova-plugin-ionic",
+  "_nodeVersion": "7.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-ionic-1.1.9.tgz_1505744400059_0.0019376615528017282"
+  },
+  "_npmUser": {
+    "name": "fuiste",
+    "email": "rudy@ionic.io"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-ionic@^1.1.8",
+    "scope": null,
+    "escapedName": "cordova-plugin-ionic",
+    "name": "cordova-plugin-ionic",
+    "rawSpec": "^1.1.8",
+    "spec": ">=1.1.8 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-ionic/-/cordova-plugin-ionic-1.1.9.tgz",
+  "_shasum": "e1ca10cdbafe8bb73a87bb3b55dc4804432187ec",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-ionic@^1.1.8",
+  "_where": "/Users/pranavarora/Files/dotslash/forsight-master",
+  "author": {
+    "name": "Ionic"
+  },
+  "bugs": {
+    "url": "https://github.com/ionic-team/cordova-plugin-ionic/issues"
+  },
+  "contributors": [
+    {
+      "name": "Max Lynch",
+      "email": "max@ionic.io"
+    },
+    {
+      "name": "William Pelrine",
+      "email": "rudy@ionic.io"
+    }
+  ],
+  "cordova": {
+    "id": "cordova-plugin-ionic",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "mkpath": ">=1.0.0",
+    "node-version-compare": ">=1.0.1",
+    "plist": ">=1.2.0",
+    "xml2js": ">=0.4"
+  },
+  "description": "Ionic Cordova SDK",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "e1ca10cdbafe8bb73a87bb3b55dc4804432187ec",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-ionic/-/cordova-plugin-ionic-1.1.9.tgz"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "1.1.9": {
+        "cordova-plugin-splashscreen": ">=4.0.0"
+      }
+    }
+  },
+  "gitHead": "5ce2f34a53b33047975a8f63704544f779945129",
+  "homepage": "https://github.com/ionic-team/cordova-plugin-ionic#readme",
+  "issue": "https://github.com/ionic-team/cordova-plugin-ionic/issues",
+  "keywords": [
+    "ionic",
+    "cordova",
+    "deploy",
+    "liveupdates",
+    "mobile",
+    "hybrid",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "fuiste",
+      "email": "rudy@ionic.io"
+    }
+  ],
+  "name": "cordova-plugin-ionic",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/cordova-plugin-ionic.git"
+  },
+  "scripts": {},
+  "version": "1.1.9"
+}
