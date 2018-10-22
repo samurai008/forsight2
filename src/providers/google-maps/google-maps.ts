@@ -59,7 +59,7 @@ export class GoogleMapsProvider {
 
           let script = document.createElement("script");
           script.id = "googleMaps";
-          this.apiKey = "AIzaSyCNy3fNswCBZ2gX162iYCwPQ8kFkQxqmNI";
+          this.apiKey = "AIzaSyCvXib5F7efIZ63uq1j_m43TGWH2W7SH1E";
 
           if (this.apiKey) {
             script.src = 'http://maps.googleapis.com/maps/api/js?key=' + this.apiKey + '&callback=mapInit';
