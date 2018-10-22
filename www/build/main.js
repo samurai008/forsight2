@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 135:
+/***/ 134:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ webpackJsonp([0],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_services_news_service__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__details_details__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__details_details__ = __webpack_require__(276);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -47,7 +47,7 @@ var NewsPage = (function () {
 }());
 NewsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'news',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/news/news.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      News\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-md-6 *ngFor="let item of items">\n        <ion-card (click)="viewItem(item)">\n          <ion-card-header>\n            <ion-item text-wrap>\n              <h2>{{item.title}}</h2>\n              <ion-thumbnail *ngIf="item.photo" item-end>\n                <img src="{{item.photo}}" width="50px" height="50px" alt="">\n              </ion-thumbnail>\n            </ion-item>\n          </ion-card-header>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/news/news.html"*/,
+        selector: 'news',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/news/news.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      News\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 col-md-6 *ngFor="let item of items">\n        <ion-card (click)="viewItem(item)">\n          <ion-card-header>\n            <ion-item text-wrap>\n              <h2>{{item.title}}</h2>\n              <ion-thumbnail *ngIf="item.photo" item-end>\n                <img src="{{item.photo}}" width="50px" height="50px" alt="">\n              </ion-thumbnail>\n            </ion-item>\n          </ion-card-header>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/news/news.html"*/,
         providers: [__WEBPACK_IMPORTED_MODULE_2__app_services_news_service__["a" /* NewsService */]],
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__app_services_news_service__["a" /* NewsService */]])
@@ -64,8 +64,8 @@ NewsPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__editUser__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__editUser__ = __webpack_require__(277);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -187,7 +187,7 @@ var UserPage = (function () {
 }());
 UserPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-user',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/user/user.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      User Profile\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="buttons-components-page" style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n\n  <ion-card>\n    <ion-card-content>\n      <img src="assets/icon/user.png" />\n    </ion-card-content>\n\n    <ion-item>\n      <button ion-button clear item-end (click)="editUser()">Edit Profile</button>\n    </ion-item>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>My Information</ion-card-header>\n    <ion-list>\n      <ion-item>\n        Name: {{name}}\n\n      </ion-item>\n\n      <ion-item>\n        Age: {{this.age}}\n\n      </ion-item>\n\n      <ion-item>\n        Phone: {{phone}}\n\n      </ion-item>\n\n      <ion-item>\n        Address: {{address}}\n\n      </ion-item>\n\n    </ion-list>\n\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>My Prescription</ion-card-header>\n    <ion-grid>\n      <ion-row>\n        <ion-col>\n          <ion-card-header>Right Eye (OD)</ion-card-header>\n          <ion-item>Sph:{{od_sph}}</ion-item>\n          <ion-item>Cyl:{{od_cyl}}</ion-item>\n          <ion-item>Axis:{{od_axis}}</ion-item>\n          <ion-item>VA:{{od_va}}</ion-item>\n        </ion-col>\n        <ion-col>\n          <ion-card-header>Left Eye (OD)</ion-card-header>\n          <ion-item>Sph:{{os_sph}}</ion-item>\n          <ion-item>Cyl:{{os_cyl}}</ion-item>\n          <ion-item>Axis:{{os_axis}}</ion-item>\n          <ion-item>VA:{{os_va}}</ion-item>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/user/user.html"*/
+        selector: 'page-user',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/user/user.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      User Profile\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="buttons-components-page" style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n\n  <ion-card>\n    <ion-card-content>\n      <img src="assets/icon/user.png" />\n    </ion-card-content>\n\n    <ion-item>\n      <button ion-button clear item-end (click)="editUser()">Edit Profile</button>\n    </ion-item>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>My Information</ion-card-header>\n    <ion-list>\n      <ion-item>\n        Name: {{name}}\n\n      </ion-item>\n\n      <ion-item>\n        Age: {{this.age}}\n\n      </ion-item>\n\n      <ion-item>\n        Phone: {{phone}}\n\n      </ion-item>\n\n      <ion-item>\n        Address: {{address}}\n\n      </ion-item>\n\n    </ion-list>\n\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>My Prescription</ion-card-header>\n    <ion-grid>\n      <ion-row>\n        <ion-col>\n          <ion-card-header>Right Eye (OD)</ion-card-header>\n          <ion-item>Sph:{{od_sph}}</ion-item>\n          <ion-item>Cyl:{{od_cyl}}</ion-item>\n          <ion-item>Axis:{{od_axis}}</ion-item>\n          <ion-item>VA:{{od_va}}</ion-item>\n        </ion-col>\n        <ion-col>\n          <ion-card-header>Left Eye (OD)</ion-card-header>\n          <ion-item>Sph:{{os_sph}}</ion-item>\n          <ion-item>Cyl:{{os_cyl}}</ion-item>\n          <ion-item>Axis:{{os_axis}}</ion-item>\n          <ion-item>VA:{{os_va}}</ion-item>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/user/user.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
 ], UserPage);
@@ -203,8 +203,8 @@ UserPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_services_optometrist_service__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__optometrist_optometrist__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_services_optometrist_service__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__optometrist_optometrist__ = __webpack_require__(86);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -244,7 +244,7 @@ var SearchPage = (function () {
 }());
 SearchPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'search',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/search/search.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Search By Name\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="status" style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>\n\n  <ion-card>\n    <ion-list *ngFor="let item of items" (click)="search(item)">\n      <ion-list-header>\n        {{item.name}}\n      </ion-list-header>\n    </ion-list>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/search/search.html"*/
+        selector: 'search',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/search/search.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Search By Name\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="status" style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>\n\n  <ion-card>\n    <ion-list *ngFor="let item of items" (click)="search(item)">\n      <ion-list-header>\n        {{item.name}}\n      </ion-list-header>\n    </ion-list>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/search/search.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__app_services_optometrist_service__["a" /* OptometristService */]])
 ], SearchPage);
@@ -260,8 +260,8 @@ SearchPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchBySpecPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_services_optometrist_service__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__optometristList_optometristList__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_services_optometrist_service__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__optometristList_optometristList__ = __webpack_require__(279);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -308,7 +308,7 @@ var SearchBySpecPage = (function () {
 }());
 SearchBySpecPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'searchSpec',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/search/searchBySpec.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Search By Specialisation\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="status" style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n  <!-- <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar> -->\n\n  <ion-searchbar [(ngModel)]="query"></ion-searchbar>\n\n  <ion-card>\n    <ion-list *ngFor="let item of items | search:\'title\':query" (click)="select(item.title)">\n      <ion-list-header>\n        {{item.title}}\n      </ion-list-header>\n    </ion-list>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/search/searchBySpec.html"*/
+        selector: 'searchSpec',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/search/searchBySpec.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Search By Specialisation\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="status" style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n  <!-- <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar> -->\n\n  <ion-searchbar [(ngModel)]="query"></ion-searchbar>\n\n  <ion-card>\n    <ion-list *ngFor="let item of items | search:\'title\':query" (click)="select(item.title)">\n      <ion-list-header>\n        {{item.title}}\n      </ion-list-header>\n    </ion-list>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/search/searchBySpec.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__app_services_optometrist_service__["a" /* OptometristService */]])
 ], SearchBySpecPage);
@@ -323,12 +323,12 @@ SearchBySpecPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_google_maps_google_maps__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_google_maps_google_maps__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__optometrist_optometrist__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directions_directions__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__optometrist_optometrist__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directions_directions__ = __webpack_require__(413);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -420,7 +420,7 @@ __decorate([
 ], MapPage.prototype, "pleaseConnect", void 0);
 MapPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-map',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/map/map.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Optometrists Near Me\n    </ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n  <div #pleaseConnect id="please-connect">\n    <p>Please wait for the map to load.</p>\n  </div>\n  <div #map id="map"></div>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12>\n        <ion-card>\n            <!-- <ion-list> -->\n              <ion-list-header>\n                <h1>Optometrists Near Me</h1>\n              </ion-list-header>\n              <ion-list *ngFor="let each of optometristsByDistance">\n                <ion-list-header>\n                  <h2>{{ each.optometrist.name }}</h2>\n                  <button ion-button color="light" (click)="getDirections(each)">Get Directions On Map</button>\n                  <br>\n                  <button ion-button color="light"  (click)="search(each.optometrist)">Show Optometrist Profile</button>\n                  <br>\n                  <p>From your current location:</p>\n                  <p *ngIf="each.distanceText">&nbsp;Distance= {{ each.distanceText }}</p>\n                  <p *ngIf="each.durationText">&nbsp;Duration= {{ each.durationText }}</p>\n                  <p *ngIf="each.optometrist.workplaceAddress">&nbsp;Address = {{ each.optometrist.workplaceAddress }}\n\n                  <br>\n                  <p>Workplace : {{ each.workplace.name}}</p>\n                  <p>Workplace Address: {{ each.workplace.address}}</p>\n                  \n                  <p *ngIf="each.optometrist.qualification">• {{ each.optometrist.qualification }} </p>\n                  <p *ngIf="each.optometrist.workExperience">• {{ each.optometrist.workExperience }}</p>\n                </ion-list-header>\n              </ion-list>\n\n              <!-- <ion-item-group *ngFor="let each of optometristsByDistance" (click)="search(each.optometrist)">\n                <ion-item>\n                  <h2>{{ each.optometrist.name }}</h2>\n                  <p>From your current location:</p>\n                  <p *ngIf="each.distanceText">Distance= {{ each.distanceText }}</p>\n                  <p *ngIf="each.durationText">Duration= {{ each.durationText }}</p>\n\n                  <p *ngIf="each.optometrist.workplaceName">• {{ each.optometrist.workplaceName }}</p>\n                  <p *ngIf="each.optometrist.qualification">• {{ each.optometrist.qualification }} </p>\n                  <p *ngIf="each.optometrist.workExperience">• {{ each.optometrist.workExperience }}</p>\n                </ion-item>\n              </ion-item-group> -->\n            <!-- </ion-list> -->\n          </ion-card>\n\n\n\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/map/map.html"*/,
+        selector: 'page-map',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/map/map.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Optometrists Near Me\n    </ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n  <div #pleaseConnect id="please-connect">\n    <p>Please wait for the map to load.</p>\n  </div>\n  <div #map id="map"></div>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12>\n        <ion-card>\n            <!-- <ion-list> -->\n              <ion-list-header>\n                <h1>Optometrists Near Me</h1>\n              </ion-list-header>\n              <ion-list *ngFor="let each of optometristsByDistance">\n                <ion-list-header>\n                  <h2>{{ each.optometrist.name }}</h2>\n                  <button ion-button color="light" (click)="getDirections(each)">Get Directions On Map</button>\n                  <br>\n                  <button ion-button color="light"  (click)="search(each.optometrist)">Show Optometrist Profile</button>\n                  <br>\n                  <p>From your current location:</p>\n                  <p *ngIf="each.distanceText">&nbsp;Distance= {{ each.distanceText }}</p>\n                  <p *ngIf="each.durationText">&nbsp;Duration= {{ each.durationText }}</p>\n                  <p *ngIf="each.optometrist.workplaceAddress">&nbsp;Address = {{ each.optometrist.workplaceAddress }}\n\n                  <br>\n                  <p>Workplace : {{ each.workplace.name}}</p>\n                  <p>Workplace Address: {{ each.workplace.address}}</p>\n                  \n                  <p *ngIf="each.optometrist.qualification">• {{ each.optometrist.qualification }} </p>\n                  <p *ngIf="each.optometrist.workExperience">• {{ each.optometrist.workExperience }}</p>\n                </ion-list-header>\n              </ion-list>\n\n              <!-- <ion-item-group *ngFor="let each of optometristsByDistance" (click)="search(each.optometrist)">\n                <ion-item>\n                  <h2>{{ each.optometrist.name }}</h2>\n                  <p>From your current location:</p>\n                  <p *ngIf="each.distanceText">Distance= {{ each.distanceText }}</p>\n                  <p *ngIf="each.durationText">Duration= {{ each.durationText }}</p>\n\n                  <p *ngIf="each.optometrist.workplaceName">• {{ each.optometrist.workplaceName }}</p>\n                  <p *ngIf="each.optometrist.qualification">• {{ each.optometrist.qualification }} </p>\n                  <p *ngIf="each.optometrist.workExperience">• {{ each.optometrist.workExperience }}</p>\n                </ion-item>\n              </ion-item-group> -->\n            <!-- </ion-list> -->\n          </ion-card>\n\n\n\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/map/map.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1__providers_google_maps_google_maps__["a" /* GoogleMapsProvider */],
@@ -681,7 +681,7 @@ GoogleMapsDirProvider = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FaceDetectionResultPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -815,7 +815,7 @@ var FaceDetectionResultPage = (function () {
 }());
 FaceDetectionResultPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/face-detection-result/face-detection-result.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>\n      Forsight\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <img [src]="imageResult" alt="ion_vision" height="300">\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Likelihood\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <ion-item>\n          <h2>{{ visionResult.detectionConfidence }}</h2>\n          <p>Detection Confidence</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.angerLikelihood }}</h2>\n          <p>Anger</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.blurredLikelihood }}</h2>\n          <p>Blurred</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.headwearLikelihood }}</h2>\n          <p>Headwear</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.joyLikelihood }}</h2>\n          <p>Joy</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.sorrowLikelihood }}</h2>\n          <p>Sorrow</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.surpriseLikelihood }}</h2>\n          <p>Surprise</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.underExposedLikelihood }}</h2>\n          <p>Underexposure</p>\n        </ion-item>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n  <ion-fab right bottom>\n      <button ion-fab color="danger" (click)="capture()"><ion-icon ios="ios-camera" md="md-camera"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/face-detection-result/face-detection-result.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/face-detection-result/face-detection-result.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>\n      Forsight\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <img [src]="imageResult" alt="ion_vision" height="300">\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Likelihood\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <ion-item>\n          <h2>{{ visionResult.detectionConfidence }}</h2>\n          <p>Detection Confidence</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.angerLikelihood }}</h2>\n          <p>Anger</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.blurredLikelihood }}</h2>\n          <p>Blurred</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.headwearLikelihood }}</h2>\n          <p>Headwear</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.joyLikelihood }}</h2>\n          <p>Joy</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.sorrowLikelihood }}</h2>\n          <p>Sorrow</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.surpriseLikelihood }}</h2>\n          <p>Surprise</p>\n        </ion-item>\n        <ion-item>\n          <h2>{{ visionResult.underExposedLikelihood }}</h2>\n          <p>Underexposure</p>\n        </ion-item>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n  <ion-fab right bottom>\n      <button ion-fab color="danger" (click)="capture()"><ion-icon ios="ios-camera" md="md-camera"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/face-detection-result/face-detection-result.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */],
         __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
@@ -834,7 +834,7 @@ FaceDetectionResultPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LensRecommenderPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -957,7 +957,7 @@ var LensRecommenderPage = (function () {
 }());
 LensRecommenderPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-lens-recommender',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/lens-recommender/lens-recommender.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>\n      Forsight\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <img [src]="imageResult" alt="ion_vision" height="300">\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Recommended Lens\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <ion-item  *ngIf="dominantColors">\n          <img [src]="recommendedLens">\n\n        </ion-item>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n  <ion-fab right bottom>\n      <button ion-fab color="danger" (click)="capture()"><ion-icon ios="ios-camera" md="md-camera"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/lens-recommender/lens-recommender.html"*/,
+        selector: 'page-lens-recommender',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/lens-recommender/lens-recommender.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>\n      Forsight\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <img [src]="imageResult" alt="ion_vision" height="300">\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Recommended Lens\n    </ion-card-header>\n    <ion-card-content>\n      <ion-list>\n        <ion-item  *ngIf="dominantColors">\n          <img [src]="recommendedLens">\n\n        </ion-item>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n  <ion-fab right bottom>\n      <button ion-fab color="danger" (click)="capture()"><ion-icon ios="ios-camera" md="md-camera"></ion-icon></button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/lens-recommender/lens-recommender.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */],
         __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
@@ -977,13 +977,13 @@ LensRecommenderPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(416);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_facebook__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_facebook__ = __webpack_require__(417);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1060,20 +1060,39 @@ var LoginPage = (function () {
         });
     };
     LoginPage.prototype.fblogin = function () {
+        var _this = this;
         this.fb.login(['public_profile', 'user_friends', 'email'])
-            .then(function (res) { return console.log('Logged into Facebook!', res); })
+            .then(function (res) {
+            console.log('Logged into Facebook!', res);
+            console.log(res['authResponse']);
+            var data = res['authResponse'];
+            var baseGraphUri = 'https://graph.facebook.com/v3.1/';
+            var accessToken = data['accessToken'];
+            var userId = data['userID'];
+            var fbUrl = baseGraphUri + userId
+                + '?access_token=' + accessToken
+                + '&fields=name,first_name,last_name,email';
+            _this.http.get(fbUrl)
+                .map(function (res) { return res.json(); })
+                .subscribe(function (res) { return _this.getFacebookData(res); });
+        })
             .catch(function (e) { return console.log('Error logging into Facebook', e); });
-        this.fb.logEvent(this.fb.EVENTS.EVENT_NAME_ADDED_TO_CART);
+        //this.fb.logEvent(this.fb.EVENTS.EVENT_NAME_ADDED_TO_CART);
+    };
+    LoginPage.prototype.getFacebookData = function (data) {
+        this.setData(data, data['firstName'] + '.' + data['last_name'], 'doe1234');
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__home_home__["a" /* HomePage */], {});
     };
     return LoginPage;
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/login/login.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Welcome to Forsight</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content text-center class="login" padding="true" style="background-color: #EBF5FB;">\n  <img src="assets/logo.png" width="250" style="margin-bottom:15px;" />\n  <h3 style="margin-top:-15px; font-style:italic; color:#029DFA;">search your optometrist</h3><br />\n  <p>Forsight helps you get latest information on eye care and connects you with experienced with optometrists for your primary eye care</p>\n  <br />\n  <br />\n  <ion-list>\n    <ion-item>\n      <ion-label fixed>Username</ion-label>\n      <ion-input type="text" value="" [(ngModel)]="username"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Password</ion-label>\n      <ion-input type="password" [(ngModel)]="password"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div padding>\n    <p *ngIf="errorMsg" style="color:red; background-color: white;">{{errorMsg}}</p>\n    <button ion-button color="secondary" block (click)="login()">Log In</button>\n    <button ion-button color="primary" block (click)="gotoSignup()">Signup</button>\n    <h4>OR</h4>\n  </div>\n\n  <div padding style="margin-top:-20px;">\n    <img (click)="fblogin()" src="assets/fb.png" style="width:200px;" />\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/login/login.html"*/
+        selector: 'page-login',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/login/login.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Welcome to Forsight</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content text-center class="login" padding="true" style="background-color: #EBF5FB;">\n  <img src="assets/logo.png" width="250" style="margin-bottom:15px;" />\n  <h3 style="margin-top:-15px; font-style:italic; color:#029DFA;">search your optometrist</h3><br />\n  <p>Forsight helps you get latest information on eye care and connects you with experienced with optometrists for your primary eye care</p>\n  <br />\n  <br />\n  <ion-list>\n    <ion-item>\n      <ion-label fixed>Username</ion-label>\n      <ion-input type="text" value="" [(ngModel)]="username"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Password</ion-label>\n      <ion-input type="password" [(ngModel)]="password"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div padding>\n    <p *ngIf="errorMsg" style="color:red; background-color: white;">{{errorMsg}}</p>\n    <button ion-button color="secondary" block (click)="login()">Log In</button>\n    <button ion-button color="primary" block (click)="gotoSignup()">Signup</button>\n    <h4>OR</h4>\n  </div>\n\n  <div padding style="margin-top:-20px;">\n    <img (click)="fblogin()" src="assets/fb.png" style="width:200px;" />\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/login/login.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_facebook__["a" /* Facebook */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_7__ionic_native_facebook__["a" /* Facebook */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ionic_native_facebook__["a" /* Facebook */]) === "function" && _d || Object])
 ], LoginPage);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=login.js.map
 
 /***/ }),
@@ -1112,7 +1131,7 @@ webpackEmptyAsyncContext.id = 205;
 
 /***/ }),
 
-/***/ 275:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1139,7 +1158,7 @@ var DetailsPage = (function () {
     return DetailsPage;
 }());
 DetailsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/details/details.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      {{item.title}}\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding class="buttons-components-page" style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n  <ion-card>\n    <ion-item>\n      <img src={{item.photo}} />\n    </ion-item>\n    <ion-card-content>\n      <ion-card-title>\n        {{item.title}}\n      </ion-card-title>\n      <ion-list>\n        <ion-item text-wrap>\n          Author:\n          <ion-note>{{item.author}}</ion-note>\n          <br><br>\n          Subtitle:\n          {{item.subtitle}}\n          <br><br>\n          Content:<p [innerHTML]="item.content"></p>\n        </ion-item>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/details/details.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/details/details.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      {{item.title}}\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding class="buttons-components-page" style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n  <ion-card>\n    <ion-item>\n      <img src={{item.photo}} />\n    </ion-item>\n    <ion-card-content>\n      <ion-card-title>\n        {{item.title}}\n      </ion-card-title>\n      <ion-list>\n        <ion-item text-wrap>\n          Author:\n          <ion-note>{{item.author}}</ion-note>\n          <br><br>\n          Subtitle:\n          {{item.subtitle}}\n          <br><br>\n          Content:<p [innerHTML]="item.content"></p>\n        </ion-item>\n      </ion-list>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/details/details.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
 ], DetailsPage);
@@ -1148,15 +1167,15 @@ DetailsPage = __decorate([
 
 /***/ }),
 
-/***/ 276:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditUserPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(29);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1351,7 +1370,7 @@ var EditUserPage = (function () {
 }());
 EditUserPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-editUser',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/user/editUser.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Edit Profile\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n\n  <ion-list>\n\n    <ion-item>\n      <ion-label fixed>Name:</ion-label>\n      <ion-input type="text" [(ngModel)]="name"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label fixed>Age:</ion-label>\n      <ion-input type="number" [(ngModel)]="age"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label fixed>Phone:</ion-label>\n      <ion-input type="number" [(ngModel)]="phone"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label fixed>Address:</ion-label>\n      <ion-input type="text" [(ngModel)]="address"></ion-input>\n    </ion-item>\n\n    <ion-card-header>Enter your Rx for right eye (OD)</ion-card-header>\n\n    <ion-item>\n      <ion-label fixed>Spherical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_sph"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Cylindrical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_cyl"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Axis:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_axis"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Visual Acuity:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_va"></ion-input>\n    </ion-item>\n\n    <ion-card-header>Enter your Rx for left eye (OS)</ion-card-header>\n\n    <ion-item>\n      <ion-label fixed>Spherical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_sph"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Cylindrical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_cyl"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Axis:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_axis"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Visual Acuity:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_va"></ion-input>\n    </ion-item>\n\n\n\n  </ion-list>\n\n  <div padding>\n    <button ion-button color="primary" block (click)="setData()">Update Profile</button>\n  </div>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/user/editUser.html"*/
+        selector: 'page-editUser',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/user/editUser.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Edit Profile\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content style="background-color: #EBF5FB;">\n  <!-- <div class="background-image"></div> -->\n\n  <ion-list>\n\n    <ion-item>\n      <ion-label fixed>Name:</ion-label>\n      <ion-input type="text" [(ngModel)]="name"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label fixed>Age:</ion-label>\n      <ion-input type="number" [(ngModel)]="age"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label fixed>Phone:</ion-label>\n      <ion-input type="number" [(ngModel)]="phone"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label fixed>Address:</ion-label>\n      <ion-input type="text" [(ngModel)]="address"></ion-input>\n    </ion-item>\n\n    <ion-card-header>Enter your Rx for right eye (OD)</ion-card-header>\n\n    <ion-item>\n      <ion-label fixed>Spherical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_sph"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Cylindrical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_cyl"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Axis:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_axis"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Visual Acuity:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_va"></ion-input>\n    </ion-item>\n\n    <ion-card-header>Enter your Rx for left eye (OS)</ion-card-header>\n\n    <ion-item>\n      <ion-label fixed>Spherical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_sph"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Cylindrical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_cyl"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Axis:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_axis"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Visual Acuity:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_va"></ion-input>\n    </ion-item>\n\n\n\n  </ion-list>\n\n  <div padding>\n    <button ion-button color="primary" block (click)="setData()">Update Profile</button>\n  </div>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/user/editUser.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
 ], EditUserPage);
@@ -1360,13 +1379,13 @@ EditUserPage = __decorate([
 
 /***/ }),
 
-/***/ 278:
+/***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OptometristListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__optometrist_optometrist__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__optometrist_optometrist__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1396,7 +1415,7 @@ var OptometristListPage = (function () {
 }());
 OptometristListPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'optometristList',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/optometristList/optometristList.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Optometrist List\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="status" style="background-color: #EBF5FB;">\n\n  <ion-card>\n    <ion-list *ngFor="let item of optometrists" (click)="select(item)">\n      <ion-list-header>\n        <h2>{{item.name}}</h2>\n        <br>\n        <p *ngIf="item.workplaceName">• {{ item.workplaceName }}</p>\n        <p *ngIf="item.qualification">• {{ item.qualification }} </p>\n        <p *ngIf="item.workExperience">• {{ item.workExperience }}</p>\n      </ion-list-header>\n    </ion-list>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/optometristList/optometristList.html"*/
+        selector: 'optometristList',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/optometristList/optometristList.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Optometrist List\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="status" style="background-color: #EBF5FB;">\n\n  <ion-card>\n    <ion-list *ngFor="let item of optometrists" (click)="select(item)">\n      <ion-list-header>\n        <h2>{{item.name}}</h2>\n        <br>\n        <p *ngIf="item.workplaceName">• {{ item.workplaceName }}</p>\n        <p *ngIf="item.qualification">• {{ item.qualification }} </p>\n        <p *ngIf="item.workExperience">• {{ item.workExperience }}</p>\n      </ion-list-header>\n    </ion-list>\n  </ion-card>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/optometristList/optometristList.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */]])
 ], OptometristListPage);
@@ -1405,7 +1424,7 @@ OptometristListPage = __decorate([
 
 /***/ }),
 
-/***/ 279:
+/***/ 280:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1413,7 +1432,7 @@ OptometristListPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__connectivity_connectivity__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_native__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_services_optometrist_service__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_services_optometrist_service__ = __webpack_require__(85);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1589,14 +1608,14 @@ GoogleMapsProvider = __decorate([
 
 /***/ }),
 
-/***/ 412:
+/***/ 413:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DirectionsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__map_mapDir__ = __webpack_require__(413);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__map_mapDir__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list__ = __webpack_require__(415);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1627,7 +1646,7 @@ var DirectionsPage = (function () {
 }());
 DirectionsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-directions',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/directions/directions.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Directions\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-tabs color="light">\n  <ion-tab [root]="tab1Root" [rootParams]="data" tabTitle="Map" tabIcon="navigate"></ion-tab>\n  <ion-tab [root]="tab2Root" [rootParams]="data" tabTitle="Directions" tabIcon="list"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/directions/directions.html"*/
+        selector: 'page-directions',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/directions/directions.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Directions\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-tabs color="light">\n  <ion-tab [root]="tab1Root" [rootParams]="data" tabTitle="Map" tabIcon="navigate"></ion-tab>\n  <ion-tab [root]="tab2Root" [rootParams]="data" tabTitle="Directions" tabIcon="list"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/directions/directions.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* NavController */]])
 ], DirectionsPage);
@@ -1636,7 +1655,7 @@ DirectionsPage = __decorate([
 
 /***/ }),
 
-/***/ 413:
+/***/ 414:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1694,7 +1713,7 @@ __decorate([
 ], MapDirPage.prototype, "pleaseConnect", void 0);
 MapDirPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-mapDir',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/map/mapDir.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Directions\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div #pleaseConnect id="please-connect">\n    <p>Please wait for the map to load.</p>\n  </div>\n  <div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/map/mapDir.html"*/
+        selector: 'page-mapDir',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/map/mapDir.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Directions\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div #pleaseConnect id="please-connect">\n    <p>Please wait for the map to load.</p>\n  </div>\n  <div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/map/mapDir.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__providers_google_maps_google_mapsDir__["a" /* GoogleMapsDirProvider */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */]])
 ], MapDirPage);
@@ -1703,7 +1722,7 @@ MapDirPage = __decorate([
 
 /***/ }),
 
-/***/ 414:
+/***/ 415:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1740,7 +1759,7 @@ var ListPage = (function () {
 }());
 ListPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-list',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Directions\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <ion-list>\n    <ion-list-header>\n      <h3>Total Duration: {{maps.duration}}</h3>\n      <h3>Total Distance: {{maps.distance}}</h3>\n    </ion-list-header>\n    <ion-item *ngFor="let item of maps.directions">\n      <ion-avatar item-left>\n        <ion-icon name="pin"></ion-icon>\n      </ion-avatar>\n      <h2 [innerHTML]="item.instructions"></h2>\n      <p [innerHTML]="item.distance.text"></p>\n      <p [innerHTML]="item.duration.text"></p>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/list/list.html"*/
+        selector: 'page-list',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Directions\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <ion-list>\n    <ion-list-header>\n      <h3>Total Duration: {{maps.duration}}</h3>\n      <h3>Total Distance: {{maps.distance}}</h3>\n    </ion-list-header>\n    <ion-item *ngFor="let item of maps.directions">\n      <ion-avatar item-left>\n        <ion-icon name="pin"></ion-icon>\n      </ion-avatar>\n      <h2 [innerHTML]="item.instructions"></h2>\n      <p [innerHTML]="item.distance.text"></p>\n      <p [innerHTML]="item.duration.text"></p>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/list/list.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_google_maps_google_mapsDir__["a" /* GoogleMapsDirProvider */]])
 ], ListPage);
@@ -1749,7 +1768,7 @@ ListPage = __decorate([
 
 /***/ }),
 
-/***/ 415:
+/***/ 416:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1838,7 +1857,7 @@ var SignupPage = (function () {
 }());
 SignupPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-signup',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/signup/signup.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Signup</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content text-center class="login" padding="true" style="background-color: #EBF5FB;">\n\n  <ion-list>\n    <ion-item>\n      <ion-label fixed>Username</ion-label>\n      <ion-input type="text" value="" [(ngModel)]="username"></ion-input>\n    </ion-item>\n\n    <p *ngIf="!isValidUsername()" style="color:red; background-color: white;">Username Already Exists!!!</p>\n\n    <ion-item>\n      <ion-label fixed>Email</ion-label>\n      <ion-input type="email" value="" [(ngModel)]="email"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label fixed>Password</ion-label>\n      <ion-input type="password" [(ngModel)]="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Re-Enter Password</ion-label>\n      <ion-input type="password" [(ngModel)]="repassword"></ion-input>\n    </ion-item>\n\n    <p *ngIf="password != repassword" style="color:red; background-color: white;">Passwords doesn\'t match!!!</p>\n\n    <ion-item>\n      <ion-label fixed>Name</ion-label>\n      <ion-input type="text" value="" [(ngModel)]="name"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Age:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="age"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Phone:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="phone"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Address:</ion-label>\n      <ion-input type="text" value="" [(ngModel)]="address"></ion-input>\n    </ion-item>\n\n    <ion-card-header>Enter your Rx for right eye (OD)</ion-card-header>\n\n    <ion-item>\n      <ion-label fixed>Spherical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_sph"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Cylindrical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_cyl"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Axis:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_axis"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Visual Acuity:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_va"></ion-input>\n    </ion-item>\n\n    <ion-card-header>Enter your Rx for left eye (OS)</ion-card-header>\n\n    <ion-item>\n      <ion-label fixed>Spherical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_sph"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Cylindrical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_cyl"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Axis:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_axis"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Visual Acuity:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_va"></ion-input>\n    </ion-item>\n\n  </ion-list>\n  <div padding>\n    <p>\n      By signing up, you agree to accept our terms and conditions and privacy policy\n    </p>\n    <button ion-button color="primary" block (click)="signup()">Signup</button>\n  </div>\n\n  <a href="#" style="color: blue;" (click)="gotoLogin()">Already have an account? Login.</a>\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/signup/signup.html"*/
+        selector: 'page-signup',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/signup/signup.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Signup</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content text-center class="login" padding="true" style="background-color: #EBF5FB;">\n\n  <ion-list>\n    <ion-item>\n      <ion-label fixed>Username</ion-label>\n      <ion-input type="text" value="" [(ngModel)]="username"></ion-input>\n    </ion-item>\n\n    <p *ngIf="!isValidUsername()" style="color:red; background-color: white;">Username Already Exists!!!</p>\n\n    <ion-item>\n      <ion-label fixed>Email</ion-label>\n      <ion-input type="email" value="" [(ngModel)]="email"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label fixed>Password</ion-label>\n      <ion-input type="password" [(ngModel)]="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Re-Enter Password</ion-label>\n      <ion-input type="password" [(ngModel)]="repassword"></ion-input>\n    </ion-item>\n\n    <p *ngIf="password != repassword" style="color:red; background-color: white;">Passwords doesn\'t match!!!</p>\n\n    <ion-item>\n      <ion-label fixed>Name</ion-label>\n      <ion-input type="text" value="" [(ngModel)]="name"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Age:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="age"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Phone:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="phone"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Address:</ion-label>\n      <ion-input type="text" value="" [(ngModel)]="address"></ion-input>\n    </ion-item>\n\n    <ion-card-header>Enter your Rx for right eye (OD)</ion-card-header>\n\n    <ion-item>\n      <ion-label fixed>Spherical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_sph"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Cylindrical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_cyl"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Axis:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_axis"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Visual Acuity:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="od_va"></ion-input>\n    </ion-item>\n\n    <ion-card-header>Enter your Rx for left eye (OS)</ion-card-header>\n\n    <ion-item>\n      <ion-label fixed>Spherical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_sph"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Cylindrical:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_cyl"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Axis:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_axis"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label fixed>Visual Acuity:</ion-label>\n      <ion-input type="number" value="" [(ngModel)]="os_va"></ion-input>\n    </ion-item>\n\n  </ion-list>\n  <div padding>\n    <p>\n      By signing up, you agree to accept our terms and conditions and privacy policy\n    </p>\n    <button ion-button color="primary" block (click)="signup()">Signup</button>\n  </div>\n\n  <a href="#" style="color: blue;" (click)="gotoLogin()">Already have an account? Login.</a>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/signup/signup.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */]])
 ], SignupPage);
@@ -1847,13 +1866,13 @@ SignupPage = __decorate([
 
 /***/ }),
 
-/***/ 418:
+/***/ 419:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(419);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(423);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(420);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(424);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1861,7 +1880,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 423:
+/***/ 424:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1871,41 +1890,41 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_call_number__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_email_composer__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_email_composer__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(466);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__ = __webpack_require__(415);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_news_news__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_details_details__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_news_news__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_details_details__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_user_user__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_user_editUser__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_optometrist_optometrist__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_user_editUser__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_optometrist_optometrist__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_face_detection_result_face_detection_result__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_lens_recommender_lens_recommender__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_search_search__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_search_searchBySpec__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_search_searchResult__ = __webpack_require__(734);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_map_map__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_map_mapDir__ = __webpack_require__(413);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_list_list__ = __webpack_require__(414);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_google_maps_google_maps__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_map_mapDir__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_list_list__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_google_maps_google_maps__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_google_maps_google_mapsDir__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_connectivity_connectivity__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_storage__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_storage__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_network__ = __webpack_require__(736);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__app_services_optometrist_service__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__app_services_optometrist_service__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__ionic_native_camera__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_transfer__ = __webpack_require__(417);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_transfer__ = __webpack_require__(418);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_photoUpload_photoUpload__ = __webpack_require__(737);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_optometristList_optometristList__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_directions_directions__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_optometristList_optometristList__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_directions_directions__ = __webpack_require__(413);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_search_search_pipe__ = __webpack_require__(738);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__ionic_native_launch_navigator__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__ionic_native_facebook__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__ionic_native_launch_navigator__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__ionic_native_facebook__ = __webpack_require__(417);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2045,17 +2064,17 @@ AppModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_news_news__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_news_news__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_search_search__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_search_searchBySpec__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_map_map__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_user_user__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_camera__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common_http__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_http__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_face_detection_result_face_detection_result__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_lens_recommender_lens_recommender__ = __webpack_require__(150);
@@ -2149,7 +2168,7 @@ __decorate([
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/app/app.html"*/'<ion-menu [content]="content" class="app" >\n  <ion-header>\n    <ion-toolbar  color="primary">\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content class="app">\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon name={{p.icon}}></ion-icon> {{p.title}}\n      </button>\n\n\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/app/app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/app/app.html"*/'<ion-menu [content]="content" class="app" >\n  <ion-header>\n    <ion-toolbar  color="primary">\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content class="app">\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon name={{p.icon}}></ion-icon> {{p.title}}\n      </button>\n\n\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
@@ -2238,7 +2257,7 @@ var SearchResultPage = (function () {
 }());
 SearchResultPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'searchResult',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/search/searchResult.html"*/'<ion-header>\n  <ion-navbar color="primary" >\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Search Result\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="status">\n  <div class="background-image"></div>\n  <ion-item><h1>You have searched for => {{item.name}}</h1></ion-item>\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/search/searchResult.html"*/,
+        selector: 'searchResult',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/search/searchResult.html"*/'<ion-header>\n  <ion-navbar color="primary" >\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      Search Result\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="status">\n  <div class="background-image"></div>\n  <ion-item><h1>You have searched for => {{item.name}}</h1></ion-item>\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/search/searchResult.html"*/,
         providers: [__WEBPACK_IMPORTED_MODULE_2__app_services_data_service__["a" /* Data */]],
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
@@ -2315,7 +2334,7 @@ Data = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_transfer__ = __webpack_require__(417);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_transfer__ = __webpack_require__(418);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2369,7 +2388,7 @@ var PhotoUploadPage = (function () {
 }());
 PhotoUploadPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-photoUpload',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/photoUpload/photoUpload.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="home" style="background-color: #EBF5FB;">\n  <button (click)="upload()" ion-button >Take Pic & Upload </button>\n  \n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/photoUpload/photoUpload.html"*/
+        selector: 'page-photoUpload',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/photoUpload/photoUpload.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="home" style="background-color: #EBF5FB;">\n  <button (click)="upload()" ion-button >Take Pic & Upload </button>\n  \n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/photoUpload/photoUpload.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_transfer__["a" /* Transfer */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__["a" /* Camera */]])
 ], PhotoUploadPage);
@@ -2424,14 +2443,14 @@ FilterPipe = __decorate([
 
 /***/ }),
 
-/***/ 79:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__news_news__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__news_news__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__search_search__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_searchBySpec__ = __webpack_require__(144);
@@ -2485,7 +2504,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Forsight | Search your optometrist</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="home">\n\n  <!-- <div class="background-image"></div> -->\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 >\n        <ion-card (click)="searchOptoByName()" style="background-color:red;">\n          <h1>Search By Name</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="searchOptoBySpec()" style="background-color:blue;">\n          <h1>Search By Specialisation</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="nearMe()" style="background-color: brown;">\n          <h1>Optometrists near me</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="profile()" style="background-color: purple;">\n          <h1>My Profile</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="news()" style="background-color:green;">\n          <h1>News</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="detectFace()" style="background-color:red;">\n          <h1>Specs Recommender</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="recommendLens()" style="background-color:red;">\n          <h1>Lens Recommender</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Forsight | Search your optometrist</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content class="home">\n\n  <!-- <div class="background-image"></div> -->\n\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 >\n        <ion-card (click)="searchOptoByName()" style="background-color:red;">\n          <h1>Search By Name</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="searchOptoBySpec()" style="background-color:blue;">\n          <h1>Search By Specialisation</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="nearMe()" style="background-color: brown;">\n          <h1>Optometrists near me</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="profile()" style="background-color: purple;">\n          <h1>My Profile</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="news()" style="background-color:green;">\n          <h1>News</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="detectFace()" style="background-color:red;">\n          <h1>Specs Recommender</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col  col-12>\n        <ion-card (click)="recommendLens()" style="background-color:red;">\n          <h1>Lens Recommender</h1>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
 ], HomePage);
@@ -2494,7 +2513,7 @@ HomePage = __decorate([
 
 /***/ }),
 
-/***/ 86:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2580,7 +2599,7 @@ OptometristService = __decorate([
 
 /***/ }),
 
-/***/ 87:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2588,8 +2607,8 @@ OptometristService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_call_number__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_email_composer__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_launch_navigator__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_email_composer__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_launch_navigator__ = __webpack_require__(278);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2635,7 +2654,7 @@ var OptometristPage = (function () {
 }());
 OptometristPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-optometrist',template:/*ion-inline-start:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/optometrist/optometrist.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Optometrist</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content class="optometrist">\n  <div id="profile-bg" style="background: url(assets/icon/bg.jpg);">\n    <img id="profile-image" src={{item.photo}}/>\n    <h3 id="profile-name">{{item.name}}</h3>\n  </div>\n  <div id="content">\n    <div id="profile-info">\n      <span id="profile-description">\n          <h1 style="color:black" >Specialisation:</h1>\n          <h4 *ngFor="let spec of item.specialisation">\n            {{ spec.title }}\n          </h4>\n          <h1 style="color:black" >Education and experience</h1>\n          <h4 *ngIf="item.qualification">{{ item.qualification }}</h4>\n          <h4 *ngIf="item.workExperience">{{ item.workExperience }}</h4>\n          <h1 style="color:black" >Workplaces:</h1>\n          <h5 *ngFor="let place of item.workplaceadd">\n            <a (click)="navigate(place)">{{place}}</a>\n          </h5>\n\n          <!-- <a (click)="navigate(item.workplaceAddress)"><h5 *ngIf="item.workplaceAddress">{{ item.workplaceadd }}</h5></a> -->\n          <p style="font-size:10px; color:black;">Click on the address to switch to Google Maps for Navigation</p>\n\n          <h1 style="color:black" >Contact Details:</h1>\n          <h5 *ngIf="item.email">Email: {{ item.email }}\n            <span>\n              <ion-icon name="ios-mail-outline"></ion-icon>\n              <button ionic-button (click)="email(item.email)">Email</button>\n            </span>\n          </h5>\n          <h5 *ngIf="item.contact">Phone: {{ item.contact }}\n            <span>\n              <ion-icon name="ios-call-outline"></ion-icon>\n              <button ionic-button><a href="tel:{{item.contact}}">Call</a></button>\n            </span>\n          </h5>\n          <br><br>\n      </span>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/pranavarora/Work/ionicApps/dotslash/forsight-master/src/pages/optometrist/optometrist.html"*/
+        selector: 'page-optometrist',template:/*ion-inline-start:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/optometrist/optometrist.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Optometrist</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content class="optometrist">\n  <div id="profile-bg" style="background: url(assets/icon/bg.jpg);">\n    <img id="profile-image" src={{item.photo}}/>\n    <h3 id="profile-name">{{item.name}}</h3>\n  </div>\n  <div id="content">\n    <div id="profile-info">\n      <span id="profile-description">\n          <h1 style="color:black" >Specialisation:</h1>\n          <h4 *ngFor="let spec of item.specialisation">\n            {{ spec.title }}\n          </h4>\n          <h1 style="color:black" >Education and experience</h1>\n          <h4 *ngIf="item.qualification">{{ item.qualification }}</h4>\n          <h4 *ngIf="item.workExperience">{{ item.workExperience }}</h4>\n          <h1 style="color:black" >Workplaces:</h1>\n          <h5 *ngFor="let place of item.workplaceadd">\n            <a (click)="navigate(place)">{{place}}</a>\n          </h5>\n\n          <!-- <a (click)="navigate(item.workplaceAddress)"><h5 *ngIf="item.workplaceAddress">{{ item.workplaceadd }}</h5></a> -->\n          <p style="font-size:10px; color:black;">Click on the address to switch to Google Maps for Navigation</p>\n\n          <h1 style="color:black" >Contact Details:</h1>\n          <h5 *ngIf="item.email">Email: {{ item.email }}\n            <span>\n              <ion-icon name="ios-mail-outline"></ion-icon>\n              <button ionic-button (click)="email(item.email)">Email</button>\n            </span>\n          </h5>\n          <h5 *ngIf="item.contact">Phone: {{ item.contact }}\n            <span>\n              <ion-icon name="ios-call-outline"></ion-icon>\n              <button ionic-button><a href="tel:{{item.contact}}">Call</a></button>\n            </span>\n          </h5>\n          <br><br>\n      </span>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Nilabjo/delhinerds-dev/forsight/src/pages/optometrist/optometrist.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_native_launch_navigator__["a" /* LaunchNavigator */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_email_composer__["a" /* EmailComposer */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_call_number__["a" /* CallNumber */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
 ], OptometristPage);
@@ -2644,5 +2663,5 @@ OptometristPage = __decorate([
 
 /***/ })
 
-},[418]);
+},[419]);
 //# sourceMappingURL=main.js.map

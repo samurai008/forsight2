@@ -1,0 +1,4 @@
+#Mon Oct 22 21:14:21 IST 2018
+base.0=/Users/Nilabjo/delhinerds-dev/forsight/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/Nilabjo/delhinerds-dev/forsight/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

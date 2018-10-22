@@ -50,6 +50,7 @@ export class LoginPage {
     this.storage.set('os_axis', Number(data.os_va));
     this.storage.set('os_va', Number(data.os_va));
   }
+
   login() {
     let headers = new Headers({
       'Content-Type': 'application/json',
@@ -75,11 +76,34 @@ export class LoginPage {
         console.log(error);
       });
   }
+
   fblogin(){
     this.fb.login(['public_profile', 'user_friends', 'email'])
-  .then((res: FacebookLoginResponse) => console.log('Logged into Facebook!', res))
-  .catch(e => console.log('Error logging into Facebook', e));
+      .then((res: FacebookLoginResponse) => {
+        console.log('Logged into Facebook!', res);
+        console.log(res['authResponse']);
 
-    this.fb.logEvent(this.fb.EVENTS.EVENT_NAME_ADDED_TO_CART);
+        let data = res['authResponse'];
+        const baseGraphUri = 'https://graph.facebook.com/v3.1/';
+        const accessToken = data['accessToken'];
+        const userId = data['userID'];
+        let fbUrl = baseGraphUri + userId
+          + '?access_token=' + accessToken
+          + '&fields=name,first_name,last_name,email';
+
+        this.http.get(fbUrl)
+          .map(res => res.json())
+          .subscribe((res) => this.getFacebookData(res));
+
+      })
+      .catch(e => console.log('Error logging into Facebook', e));
+    //this.fb.logEvent(this.fb.EVENTS.EVENT_NAME_ADDED_TO_CART);
+  }
+
+  getFacebookData(data) {
+    this.setData(data, data['firstName'] + '.' + data['last_name'], 'doe1234');
+    this.navCtrl.setRoot(HomePage, {
+
+    })
   }
 }
