@@ -3,7 +3,7 @@
     <name>Forsight</name>
     <description>Search your optometrist</description>
     <author email="manshulnagpaul@gmail.com" href="http://www.delhinerds.com">Delhi Nerds</author>
-    <content original-src="index.html" src="http://192.168.1.101:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-intent href="http://*/*" />
@@ -102,6 +102,5 @@
         <variable name="APP_ID" value="292526344573042" />
         <variable name="APP_NAME" value="forsightsociallogin" />
     </plugin>
-    <allow-navigation href="http://192.168.1.101:8100" sessionid="ba548b08" />
     <engine name="android" spec="7.0.0" />
 </widget>
